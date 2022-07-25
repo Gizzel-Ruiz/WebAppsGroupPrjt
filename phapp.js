@@ -1,13 +1,29 @@
 function regButtonClick(){
-    const button = document.getElementById("regButton");
-    const label = document.getElementById("regErrorLabel")
+    const rbutton = document.getElementById("regButton");
+    const rlabel = document.getElementById("regErrorLabel")
 
-    button.addEventListener('click', function onClick(event) { 
-        number = 1;
+    rbutton.addEventListener('click', function onClick(event) { 
+        // Need to add logic to check for blank fields
+        number = 0;
         if (number == 0) {
-            label.style.display="block";
+            rlabel.style.display="block";
         } else{
-            label.style.display="none";
+            rlabel.style.display="none";
+        }
+    });
+}
+
+function signinButtonClick(){
+    const sbutton = document.getElementById("signinButton");
+    const slabel = document.getElementById("signinErrorLabel")
+
+    sbutton.addEventListener('click', function onClick(event) { 
+        // Need to add logic to validate login credentials
+        number = 0;
+        if (number == 0) {
+            slabel.style.display="block";
+        } else{
+            slabel.style.display="none";
         }
     });
 }

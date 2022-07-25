@@ -1,3 +1,4 @@
+/* basic style for all pages */
 body{
     --color-background-primary: #F4E285;
     --color-background-secondary: #456990;
@@ -22,9 +23,8 @@ body{
     color: var(--color-font-primary);
 }
 
-.registration-container {
-    width: 500px;
-    max-width: 500px;
+/* styles container on registration and signin page that holds logo, fields, and registration button */
+.registration-container, .signin-container {
     margin: 1rem;
     padding: 2rem;
     text-align: center;
@@ -33,21 +33,22 @@ body{
     border-radius: var(--border-radius);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
-
+/* styles error messages on forms */
 .form-error-msg {
     color: var(--color-font-error);
     font-weight: bold;
 }
-
+/* styles focus for form fields */
 .form-control:focus {
     border-color:var(--color-background-secondary);
 }
-
+/* styles buttons on website NOTE: any button using the class "button" will receive this style */
 .button {
     background: var(--color-btn-primary);
     border:none;
     border-radius: var(--button-border-radius);
 }
+/* styles hover action for buttons on website NOTE: any button using the class "button" will receive this style */
 .button:hover {
     background: var(--color-btn-primary-active);
     border: solid;
@@ -55,7 +56,14 @@ body{
     border-radius: var(--button-border-radius);
     border-width: var(--button-border-width);
 }
-.regErrorLabel {
+/* styles error label on registration and sign in form so that it's not displayed when page is loaded */
+.regErrorLabel, .signinErrorLabel {
     display: none;
+}
+/* styles container on registration and sign in page that holds image to ensure it's centered even if fields move */
+#regImgContainer, #signinImgContainer {
+    height: 450px;
+    justify-items: center;
+    padding: 1rem;
 }
 
