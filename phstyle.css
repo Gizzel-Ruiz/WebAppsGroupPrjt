@@ -1,0 +1,60 @@
+/* this document will be deleted and is just a placeholder to work on profile menu button until feed and category pages are ready for this code */
+
+body {
+    --color-font-primary: #456990;
+    --color-background-primary: #F4E285;
+    --color-background-secondary: #456990;
+}
+.header {
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: baseline;
+    padding: .5rem;
+    gap: 1rem;
+}
+.link{
+    background: none;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 0;
+}
+.link{
+    color: var(--color-font-primary);
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: (100% + .25rem);
+    background-color: var(--color-background-primary);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 150ms ease-out;
+}
+
+.dropdown > .link:focus + .dropdown-menu {
+    opacity: 1;
+}
+
+.profileMenuOption {
+    background-color: var(--color-background-primary);
+    border: solid;
+    border-color: var(--color-background-secondary);
+    border-width: .5px;
+    padding: 10px 20px;
+    width: 100px;
+}
+
+.profileMenuOption a {
+    text-decoration: none;
+    color: var(--color-font-primary);
+}
+
+.resize {
+    height: 50px;
+    width: auto;
+}
