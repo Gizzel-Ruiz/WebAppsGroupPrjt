@@ -61,33 +61,6 @@ body{
     display: none;
 }
 
-/* feed */
-.posts-card{
-    margin-left: 60rem;
-    margin-bottom: 30rem;
-    margin-top: -30rem;
-}
-
-.card{
-    background-color: #F4E285;
-}
-
-.post-btn{
-    margin-left: 65rem;
-    background-color: #456990;
-}
-
-.post-btn:hover{
-    background-color: #456990;
-    color: floralwhite;
-}
-
-
-
-/* cat1 */
-
-/* cat2 */
-
 /* styles container on registration and sign in page that holds image to ensure it's centered even if fields move */
 #regImgContainer, #signinImgContainer {
     height: 450px;
