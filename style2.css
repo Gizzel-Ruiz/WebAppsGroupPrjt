@@ -69,5 +69,14 @@ div.scroll {
     text-align:justify;
 }
 
+.button-flex{
+    --color-btn-primary: #5b8e7d;
+    color: #456990;
+    background: var(--color-btn-primary);
+    border:none;
+    border-radius: var(--button-border-radius);
+    
+}
+
 /* posts */
 
